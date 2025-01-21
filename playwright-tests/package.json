@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:all": "npx playwright test",
-    "test:headful": "npx playwright test --headed",
+    "test:all": "npx playwright test --project=chromium",
+    "test:headful": "npx playwright test --project=chromium --headed",
     "test:chrome": "npx playwright test --project=chromium --headed",
     "test:headful:chrome": "npx playwright test --project=chromium",
     "test:single": "npx playwright test tests/create-group-poll.spec.js",
